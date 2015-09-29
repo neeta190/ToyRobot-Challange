@@ -1,0 +1,15 @@
+com\toy\robot\store\RobotStore.class
+com\toy\robot\enums\Angle.class
+com\toy\robot\main\RobotPlatform.class
+com\toy\robot\main\RobotPositionImpl.class
+com\toy\robot\factory\RobotFactoryImpl.class
+com\toy\robot\inout\InputOutput.class
+com\toy\robot\main\RobotIntf.class
+com\toy\robot\factory\RobotFactoryIntf.class
+com\toy\robot\inout\RobotNameList.class
+com\toy\robot\main\RobotPosition.class
+com\toy\robot\main\RobotPositionImpl$1.class
+com\toy\robot\store\RobotStoreImpl.class
+com\toy\robot\main\RobotImpl.class
+com\toy\robot\enums\ChangePosition.class
+com\toy\robot\exception\CustomException.class

@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>RestfulToyRobot</groupId>
+  <artifactId>RestfulToyRobot</artifactId>
+  <version>1.0.0</version>
+  <packaging>war</packaging>
+  
+     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <version.jdk>1.7</version.jdk>  
+        <version.mvn.compiler>3.1</version.mvn.compiler>
+        <version.mvn.war.plugin>2.4</version.mvn.war.plugin>
+        <version.jersey>2.17</version.jersey>
+        <version.toyrobot>1.0.0</version.toyrobot>
+      </properties>
+    
+    <dependencies>
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>${version.jersey}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet-core</artifactId>
+			<version>${version.jersey}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-moxy</artifactId>
+			<version>${version.jersey}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.toy.robot</groupId>
+			<artifactId>ToyRobot</artifactId>
+			<version>${version.toyrobot}</version>
+		</dependency>
+		
+</dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${version.mvn.compiler}</version>
+        <configuration>
+          <source>${version.jdk}</source>
+          <target>${version.jdk}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>${version.mvn.war.plugin}</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.toy.robot</groupId>
+  <artifactId>ToyRobot</artifactId>
+  <version>1.0.0</version>
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <version.jdk>1.7</version.jdk>  
+        <version.mvn.compiler>3.1</version.mvn.compiler>
+        <version.junit>4.4</version.junit>
+      </properties>
+      
+     <dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${version.junit}</version>
+		</dependency>
+	</dependencies> 
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${version.mvn.compiler}</version>
+        <configuration>
+          <source>${version.jdk}</source>
+          <target>${version.jdk}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
